@@ -1,0 +1,74 @@
+/* 
+	Optional file for easily change colors.
+	Color scheme: Blue
+*/
+
+/* ==== Background motifs ==== */
+/* If you want to change header's background*/
+header 		 {background: #000000}
+.dark header {background: #000000}
+
+
+/* If you want to change main body's background*/
+body {background: #000000 url("../images/motifs/gray.png") repeat;}
+
+
+/* If you want to change .dark sections background
+.dark {background: #FF006A url("../images/motifs/grangray.png") repeat; color: #FF006A;}
+*/
+
+
+
+/* ==== Top navigation ==== */
+header,
+nav a, 
+nav a:visited,
+nav a:focus {
+	border-top-color: #000000;
+	color: #ffffff;
+	text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
+}
+nav a:hover {
+	color: #7EAB26;
+	border-top-color: #7EAB26;
+}
+header.dark,
+.dark nav a, 
+.dark nav a:visited,
+.dark nav a:focus {
+	color: #95CC27
+	text-shadow: none;
+}
+.dark nav a:hover {
+	color: #95CC27;
+	border-top-color: #95CC27;
+}
+/* Active page link */
+nav a.active,
+nav a.active:focus,
+.dark nav a.active,
+.dark nav a.active:focus {
+	color: #95CC27;
+	border-top-color: #BBFF36;
+}
+nav a.active:hover {
+	color: #BBFF36;
+	border-top-color: #BBFF36;
+}
+.dark nav a.active:hover {
+	color: #7EAB26;
+	border-top-color: #BBFF36;
+}
+nav a span {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight	: normal;
+}
+
+/* Content links */
+a, a:visited {color: #7EAB26;}
+a:hover, a:focus {color: #0FF006A;}
+
+/* Content links in dark context */
+.dark a, .dark a:visited {color:#7EAB26}
+.dark a:hover, .dark a:focus {color: #FFFFFF;}
