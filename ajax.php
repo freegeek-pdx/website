@@ -1,4 +1,5 @@
 <?php
+session_start();
 /* 
 	Spark – Simple and Effective 
 	Rev. 6
@@ -9,7 +10,6 @@
 define('TO_EMAIL', 'info@freegeek.org');
 
 // === You don't need to change anything else. ===
-
 
 
 $aErrors = array();
@@ -69,12 +69,20 @@ if (!empty($_POST)) { // Form posted?
 	
 	if (filter_var($sFromEmail, FILTER_VALIDATE_EMAIL)) { // Valid email format?
 	
+	include_once dirname(__FILE__) . '/securimage/securimage.php';
+
+	$securimage = new Securimage();
+
+	if ($securimage->check($_POST['captcha_code']) == false) {
+			$aErrors[] = "Sorry. That code was incorrect.";
+	} else {
 		$bMailSent = mail(TO_EMAIL, "New inquiry from $sFromName", $sMessage, $sHeaders);
 		if ($bMailSent) {
-			$aResults[] = "Message sent, thank you!";
+		$aResults[] = "Message sent, thank you!";
 		} else {
 			$aErrors[] = "Message not sent, please try again later.";
 		}
+	}
 
 	} else {
 		$aErrors[] = 'Invalid email address.';
@@ -87,5 +95,4 @@ if (!empty($_POST)) { // Form posted?
 output($aErrors, $aResults);
 
 
-
-
+?>

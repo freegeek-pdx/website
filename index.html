@@ -224,7 +224,7 @@ Interested in working as a professional programmer? It's not as hard as you migh
 			<div class="eleven columns">
 				<!-- <img src="images/empty.gif" alt="" class="large-icons icon-cert" /> -->
 				<h3>Tech Support</h3>
-				<p>Free Geek supports granted PCs and laptop hardware/software up to one year for free, with limited restrictions. Adoption volunteers must take the Getting Started class in order to receive free software tech support. Computers sold through our Thrift Store also benefit from a 6-month hardware and software warranty. Tech Support is currently open 10-6 Tuesday-Saturday.<br><br><a href=http://www.freegeek.org/about/techsupport/ title="Free Geek Tech Support services">About Free Geek Tech Support</a></p>
+				<p>Free Geek supports granted PCs and laptop hardware/software up to one year for free, with limited restrictions. Adoption volunteers must take the Getting Started class in order to receive free software tech support. Computers sold through our Thrift Store also benefit from a 6-month hardware and software warranty. Tech Support is currently open 12-5:45 Tuesday-Saturday.<br><br><a href=http://www.freegeek.org/about/techsupport/ title="Free Geek Tech Support services">About Free Geek Tech Support</a></p>
 			</div>
 
 		</div><!-- .row -->
@@ -413,6 +413,19 @@ Interested in working as a professional programmer? It's not as hard as you migh
 						<textarea name="message" id="form-message"></textarea>
 					</div>
 				</div>
+
+				<div class="row">			
+					<div class="three columns alpha">
+						<label>Are you human?<span>Type the letters</span></label>
+					</div>
+					<div class="three columns">
+						<img height="60" id="captcha" src="./securimage/securimage_show.php" alt="Are you human check" />
+					</div>
+					<div class="four columns omega">
+					<input type="text" name="captcha_code" /><a href="#" onclick="document.getElementById('captcha').src = './securimage/securimage_show.php?' + Math.random(); return false">New image</a>
+					</div>
+				</div>
+
 				
 				<div class="seven columns offset-by-three">
 					<button type="submit">Submit Form</button>
