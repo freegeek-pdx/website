@@ -1092,7 +1092,7 @@ a.imglink {
 
 /* content-specific containers */
 .welcome-container {
-	padding: 10px 20px;
+	padding: 10px 10px;
 }
 
 /* Shadows effect (experimental. not yet ported on .dark sections) */
