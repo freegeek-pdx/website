@@ -1,0 +1,9 @@
+.black_overlay{display: none; position: fixed; z-index:1000001; top: 0%;left: 0%;width: 100%;height: 100%;background-color: black;-moz-opacity: 0.5;opacity:.50;filter: alpha(opacity=50);}
+
+.white_content {display: none; margin-top: -320px; margin-left: -485px; width:970px; height:640px; position:fixed; top:50%; left:50%;
+   border: none;z-index:1000002;overflow: auto;}
+.main-box{margin:15px auto 0 auto; width:930px; position:relative;z-index=1000003;}
+
+.widget_close{ position:absolute; z-index=1000004; right:-12px; top:-12px; background:#000; width:25px; height:25px; color:#fff; font-size:16px; font-weight:900; font-family:Arial, Helvetica, sans-serif; display:block; border-radius:100%; text-align:center; line-height:25px; border:2px solid #fff;text-decoration:none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);}
+
+.floating_button_br{display: block; margin-top: 0px; margin-left: 0px; width:auto ; height: auto; position:fixed; bottom:-2px; right: 150px; z-index=999999; overflow: auto;}

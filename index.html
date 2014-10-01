@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/media-queries-r9.css">
 	<link rel="stylesheet" href="css/sprites-r7.css">
 	<link rel="stylesheet" href="css/theme-default-r6.css">
+	<link rel="stylesheet" href="css/flipcause.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic' rel='stylesheet' type='text/css'>
 
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -474,6 +475,32 @@
 	</div><!-- container -->
 </article>
 </div><!-- #main -->
+
+<!-- Flipcause button -->
+<div id="floating_button_br" class="floating_button_br" onclick="open_window_br('NDEy')" style="padding:4px 10px 4px 10px; border-radius:0px 0px 0px 0px; font-size:24px; color:#fff; font-weight:bold; font-family:Arial, Helvetica, sans-serif;text-align:center; cursor:pointer;border:2px solid #fff;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); ; background:#7DAB25; color:#fff; z-index:999999 ">How can <em>I</em> help?</></div>
+
+<div id="fade_br" class="black_overlay"></div>
+
+<div id="light_br" class="white_content">
+  <div class="main-box"><a href = "javascript:void(o)" onclick=document.getElementById("light_br").style.display="none";document.getElementById("fade_br").style.display="none">
+      <div class="widget_close">X</></div>
+      <iframe height="580" width="925" scrolling="no" src="https://www.flipcause.com/widget/widget_home/NDEy"></iframe>
+</div></div>
+   <script>
+function open_window_br(cause_id)
+{
+//alert(navigator.appName);
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || navigator.appName == 'Microsoft Internet Explorer' || navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+var new_url="https://www.flipcause.com/widget/widget_home/"+cause_id
+window.open(new_url);
+}else{
+document.getElementById("light_br").style.display="block";
+document.getElementById("fade_br").style.display="block";
+}
+}
+</script>
+<!-- /Flipcause button -->
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
