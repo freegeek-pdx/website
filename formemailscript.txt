@@ -1,0 +1,48 @@
+	<form action="ajax.php" method="post" class="send-with-ajax">
+				
+				<div class="row">
+					<div class="three columns alpha">
+						<label for="form-name">Your Name <span>required</span></label>
+					</div>
+					<div class="seven columns omega">
+						<input type="text" name="name" id="form-name" placeholder="Your Name" required="required" />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="three columns alpha">
+						<label for="form-email">Your Email <span>email required</span></label>
+					</div>
+					<div class="seven columns omega">	
+						<input type="email" name="email" id="form-email" placeholder="your@email.com" required="required" />
+					</div>
+				</div>
+
+				<div class="row">			
+					<div class="three columns alpha">
+						<label for="form-message">Message</label>
+					</div>
+					<div class="seven columns omega">	
+						<textarea name="message" id="form-message"></textarea>
+					</div>
+				</div>
+
+				<div class="row">			
+					<div class="three columns alpha">
+						<label>Are you human?<span>Type the letters</span></label>
+					</div>
+					<div class="three columns">
+						<img height="60" id="captcha" src="./securimage/securimage_show.php" alt="Are you human check" />
+					</div>
+					<div class="four columns omega">
+					<input type="text" name="captcha_code" /><a href="#" onclick="document.getElementById('captcha').src = './securimage/securimage_show.php?' + Math.random(); return false">New image</a>
+					</div>
+				</div>
+
+				
+				<div class="seven columns offset-by-three">
+					<button type="submit">Submit Form</button>
+					<div class="ajax-response"></div>
+				</div>
+			
+			</form>

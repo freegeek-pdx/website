@@ -7,3 +7,5 @@
 .widget_close{ position:absolute; z-index=1000004; right:-12px; top:-12px; background:#000; width:25px; height:25px; color:#fff; font-size:16px; font-weight:900; font-family:Arial, Helvetica, sans-serif; display:block; border-radius:100%; text-align:center; line-height:25px; border:2px solid #fff;text-decoration:none;box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);}
 
 .floating_button_br{display: block; margin-top: 0px; margin-left: 0px; width:auto ; height: auto; position:fixed; bottom:-2px; right: 150px; z-index=999999; overflow: auto;}
+
+.medium_button{display: block; margin: 0px 0px 0px 10px; width:160px;height:70px; line-height:2.4; position:relative; float:right}
